@@ -12,7 +12,7 @@ public class JyInternet {
     public init(){
     }
     
-    // 須先於.Header設定載入Reachability.h
+    // 須先於.Header設定載入 #import "Reachability.h"
     // MARK: - 檢查裝置的網路狀態
     public func checkInternetFunction() -> Bool {
         let reachability = Reachability(hostName: "https://www.apple.com/")

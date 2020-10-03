@@ -24,6 +24,7 @@ class JerryKitTests: XCTestCase {
     func test() {
         JyDateTest().test()
         JyJSONTest().test()
+//        JySqliteTest().test()
     }
 
 //    func testPerformanceExample() {

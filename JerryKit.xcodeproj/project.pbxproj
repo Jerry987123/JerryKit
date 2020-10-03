@@ -19,12 +19,14 @@
 		E5AE2077252820B900F98C66 /* JerryKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE2076252820B900F98C66 /* JerryKitTests.swift */; };
 		E5AE20822528271100F98C66 /* JyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20812528271000F98C66 /* JyDate.swift */; };
 		E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20832528294600F98C66 /* JyDateTest.swift */; };
+		E5E13AE025287FEB0018AB61 /* JySqliteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E13ADF25287FEB0018AB61 /* JySqliteTest.swift */; };
 		E5F6CC28252866850008CD47 /* JyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC27252866850008CD47 /* JyLocation.swift */; };
 		E5F6CC2B25286AC50008CD47 /* JyMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC2A25286AC50008CD47 /* JyMobile.swift */; };
 		E5F6CC2E252872580008CD47 /* JyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC2D252872580008CD47 /* JyLayout.swift */; };
 		E5F6CC30252877A80008CD47 /* JyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC2F252877A80008CD47 /* JyStruct.swift */; };
 		E5F6CC32252879860008CD47 /* JyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC31252879860008CD47 /* JyJSON.swift */; };
 		E5F6CC3425287A640008CD47 /* JyJSONTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC3325287A640008CD47 /* JyJSONTest.swift */; };
+		E5F6CC3725287E1D0008CD47 /* JySqlite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC3625287E1D0008CD47 /* JySqlite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +58,16 @@
 		E5AE2078252820B900F98C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5AE20812528271000F98C66 /* JyDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDate.swift; sourceTree = "<group>"; };
 		E5AE20832528294600F98C66 /* JyDateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDateTest.swift; sourceTree = "<group>"; };
+		E5E13ADF25287FEB0018AB61 /* JySqliteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JySqliteTest.swift; sourceTree = "<group>"; };
 		E5F6CC27252866850008CD47 /* JyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyLocation.swift; sourceTree = "<group>"; };
 		E5F6CC2A25286AC50008CD47 /* JyMobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyMobile.swift; sourceTree = "<group>"; };
 		E5F6CC2D252872580008CD47 /* JyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyLayout.swift; sourceTree = "<group>"; };
 		E5F6CC2F252877A80008CD47 /* JyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyStruct.swift; sourceTree = "<group>"; };
 		E5F6CC31252879860008CD47 /* JyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyJSON.swift; sourceTree = "<group>"; };
 		E5F6CC3325287A640008CD47 /* JyJSONTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyJSONTest.swift; sourceTree = "<group>"; };
+		E5F6CC3625287E1D0008CD47 /* JySqlite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JySqlite.swift; sourceTree = "<group>"; };
+		E5F6CC3925287E690008CD47 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E5F6CC3A25287E850008CD47 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 				E58D4B632527A5E700C84005 /* JerryKit */,
 				E5AE2075252820B900F98C66 /* JerryKitTests */,
 				E58D4B622527A5E700C84005 /* Products */,
+				E5F6CC3825287E690008CD47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +131,7 @@
 				E5F6CC26252866230008CD47 /* JyLocation */,
 				E5F6CC2925286AB50008CD47 /* JyMobile */,
 				E5F6CC2C2528723D0008CD47 /* JyLayout */,
+				E5F6CC3525287DD80008CD47 /* JySqlite */,
 				E5AE20682528173A00F98C66 /* JerryKit-Bridging-Header.h */,
 			);
 			path = Source;
@@ -190,6 +198,24 @@
 				E5F6CC2D252872580008CD47 /* JyLayout.swift */,
 			);
 			path = JyLayout;
+			sourceTree = "<group>";
+		};
+		E5F6CC3525287DD80008CD47 /* JySqlite */ = {
+			isa = PBXGroup;
+			children = (
+				E5F6CC3625287E1D0008CD47 /* JySqlite.swift */,
+				E5E13ADF25287FEB0018AB61 /* JySqliteTest.swift */,
+			);
+			path = JySqlite;
+			sourceTree = "<group>";
+		};
+		E5F6CC3825287E690008CD47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5F6CC3A25287E850008CD47 /* libsqlite3.0.tbd */,
+				E5F6CC3925287E690008CD47 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +322,7 @@
 			files = (
 				E5F6CC32252879860008CD47 /* JyJSON.swift in Sources */,
 				E5F6CC2B25286AC50008CD47 /* JyMobile.swift in Sources */,
+				E5E13AE025287FEB0018AB61 /* JySqliteTest.swift in Sources */,
 				E5F6CC3425287A640008CD47 /* JyJSONTest.swift in Sources */,
 				E5F6CC30252877A80008CD47 /* JyStruct.swift in Sources */,
 				E58D4B692527A5E700C84005 /* ViewController.swift in Sources */,
@@ -303,6 +330,7 @@
 				E5AE2067252814AD00F98C66 /* JyInternet.swift in Sources */,
 				E5AE20822528271100F98C66 /* JyDate.swift in Sources */,
 				E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */,
+				E5F6CC3725287E1D0008CD47 /* JySqlite.swift in Sources */,
 				E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */,
 				E5AE206B2528173B00F98C66 /* Reachability.m in Sources */,
 				E5F6CC2E252872580008CD47 /* JyLayout.swift in Sources */,
