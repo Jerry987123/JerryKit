@@ -6,6 +6,8 @@
 //  Copyright © 2020 Jerry987123. All rights reserved.
 //
 
+import UIKit
+
 public class JyInternet {
     public init(){
     }
@@ -20,6 +22,16 @@ public class JyInternet {
         } else {
             dprint("internet connected successfully.")
             return true
+        }
+    }
+    // MARK: - 以safari開啟網址
+    public func showWeb(_ url: String) {
+        if let url = URL(string: "\(url)"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         }
     }
 }

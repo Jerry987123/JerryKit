@@ -15,6 +15,7 @@ class JyDateTest {
         dateIsBigThanNowTest()
         dateIsBigThanNow2Test()
         addMinturesTest()
+        convertDateTimeFormatterTest()
     }
     func getNowTest(){
         var msg = inter.getNowYYYYMMdd()
@@ -98,6 +99,16 @@ class JyDateTest {
             dprint("addMinturesTest成功")
         } else {
             dprint("addMinturesTest失敗")
+        }
+    }
+    func convertDateTimeFormatterTest(){
+        let time1 = "2020-10-03 12:24:00"
+        let time2 = inter.convertDateTimeFormatter(time1)
+        let check = "下午 12:24:00"
+        if check == time2 {
+            dprint("convertDateTimeFormatterTest 測試成功")
+        } else {
+            dprint("convertDateTimeFormatterTest 測試失敗")
         }
     }
 }

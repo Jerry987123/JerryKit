@@ -106,4 +106,18 @@ public class JyDate {
         result = dateFormatter.string(from: newDate)
         return result
     }
+    // MARK: - 轉換 2018-05-07 14:03:39 時間格式為 下午 22:56:00
+    func convertDateTimeFormatter(_ dateTime: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
+        guard let date = dateFormatter.date(from: dateTime) else {
+            dprint("date failed")
+            return ""
+        }
+        dateFormatter.dateFormat = "a HH:mm:ss"
+        dateFormatter.amSymbol = "上午"
+        dateFormatter.pmSymbol = "下午"
+        let resultString = dateFormatter.string(from: date)
+        return resultString
+    }
 }

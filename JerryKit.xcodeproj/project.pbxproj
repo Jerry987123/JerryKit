@@ -19,6 +19,7 @@
 		E5AE2077252820B900F98C66 /* JerryKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE2076252820B900F98C66 /* JerryKitTests.swift */; };
 		E5AE20822528271100F98C66 /* JyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20812528271000F98C66 /* JyDate.swift */; };
 		E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20832528294600F98C66 /* JyDateTest.swift */; };
+		E5F6CC28252866850008CD47 /* JyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC27252866850008CD47 /* JyLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		E5AE2078252820B900F98C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5AE20812528271000F98C66 /* JyDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDate.swift; sourceTree = "<group>"; };
 		E5AE20832528294600F98C66 /* JyDateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDateTest.swift; sourceTree = "<group>"; };
+		E5F6CC27252866850008CD47 /* JyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +110,9 @@
 			children = (
 				E5AE206E25281D2400F98C66 /* JyInternet */,
 				E5AE206F25281D6F00F98C66 /* JyBase */,
-				E5AE20682528173A00F98C66 /* JerryKit-Bridging-Header.h */,
 				E5AE2080252826FB00F98C66 /* JyDate */,
+				E5F6CC26252866230008CD47 /* JyLocation */,
+				E5AE20682528173A00F98C66 /* JerryKit-Bridging-Header.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -148,6 +151,14 @@
 				E5AE20832528294600F98C66 /* JyDateTest.swift */,
 			);
 			path = JyDate;
+			sourceTree = "<group>";
+		};
+		E5F6CC26252866230008CD47 /* JyLocation */ = {
+			isa = PBXGroup;
+			children = (
+				E5F6CC27252866850008CD47 /* JyLocation.swift */,
+			);
+			path = JyLocation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 				E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */,
 				E5AE206B2528173B00F98C66 /* Reachability.m in Sources */,
 				E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */,
+				E5F6CC28252866850008CD47 /* JyLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
