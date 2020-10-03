@@ -22,7 +22,7 @@ class JerryKitTests: XCTestCase {
     }
 
     func test() {
-
+        JyDateTest().test()
     }
 
 //    func testPerformanceExample() {

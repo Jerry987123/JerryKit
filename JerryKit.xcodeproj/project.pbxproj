@@ -17,6 +17,8 @@
 		E5AE206B2528173B00F98C66 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AE206A2528173B00F98C66 /* Reachability.m */; };
 		E5AE206D2528180200F98C66 /* JyBaseFuns.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE206C2528180200F98C66 /* JyBaseFuns.swift */; };
 		E5AE2077252820B900F98C66 /* JerryKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE2076252820B900F98C66 /* JerryKitTests.swift */; };
+		E5AE20822528271100F98C66 /* JyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20812528271000F98C66 /* JyDate.swift */; };
+		E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20832528294600F98C66 /* JyDateTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		E5AE2074252820B900F98C66 /* JerryKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JerryKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5AE2076252820B900F98C66 /* JerryKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JerryKitTests.swift; sourceTree = "<group>"; };
 		E5AE2078252820B900F98C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5AE20812528271000F98C66 /* JyDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDate.swift; sourceTree = "<group>"; };
+		E5AE20832528294600F98C66 /* JyDateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDateTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				E5AE206E25281D2400F98C66 /* JyInternet */,
 				E5AE206F25281D6F00F98C66 /* JyBase */,
 				E5AE20682528173A00F98C66 /* JerryKit-Bridging-Header.h */,
+				E5AE2080252826FB00F98C66 /* JyDate */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -134,6 +139,15 @@
 				E5AE2078252820B900F98C66 /* Info.plist */,
 			);
 			path = JerryKitTests;
+			sourceTree = "<group>";
+		};
+		E5AE2080252826FB00F98C66 /* JyDate */ = {
+			isa = PBXGroup;
+			children = (
+				E5AE20812528271000F98C66 /* JyDate.swift */,
+				E5AE20832528294600F98C66 /* JyDateTest.swift */,
+			);
+			path = JyDate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +255,8 @@
 				E58D4B692527A5E700C84005 /* ViewController.swift in Sources */,
 				E5AE206D2528180200F98C66 /* JyBaseFuns.swift in Sources */,
 				E5AE2067252814AD00F98C66 /* JyInternet.swift in Sources */,
+				E5AE20822528271100F98C66 /* JyDate.swift in Sources */,
+				E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */,
 				E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */,
 				E5AE206B2528173B00F98C66 /* Reachability.m in Sources */,
 				E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */,
