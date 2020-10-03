@@ -10,12 +10,12 @@
 // Swift Compiler - Custom Flags
 // Other Swift Flags
 // Debug 欄位的值設定 -D DEBUG
-func dprint(_ item: @autoclosure () -> Any) {
+public func dprint(_ item: @autoclosure () -> Any) {
     #if DEBUG
         print("------>",item())
     #endif
 }
-func dprint(_ item: @autoclosure () -> Any, _ item2: @autoclosure () -> Any) {
+public func dprint(_ item: @autoclosure () -> Any, _ item2: @autoclosure () -> Any) {
     #if DEBUG
         print("------>","\(item())\(item2())")
     #endif

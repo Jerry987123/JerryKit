@@ -16,7 +16,18 @@
 		E5AE2067252814AD00F98C66 /* JyInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE2066252814AD00F98C66 /* JyInternet.swift */; };
 		E5AE206B2528173B00F98C66 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E5AE206A2528173B00F98C66 /* Reachability.m */; };
 		E5AE206D2528180200F98C66 /* JyBaseFuns.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE206C2528180200F98C66 /* JyBaseFuns.swift */; };
+		E5AE2077252820B900F98C66 /* JerryKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE2076252820B900F98C66 /* JerryKitTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5AE2079252820B900F98C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E58D4B592527A5E700C84005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E58D4B602527A5E700C84005;
+			remoteInfo = JerryKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E58D4B612527A5E700C84005 /* JerryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JerryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +43,20 @@
 		E5AE20692528173B00F98C66 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E5AE206A2528173B00F98C66 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E5AE206C2528180200F98C66 /* JyBaseFuns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyBaseFuns.swift; sourceTree = "<group>"; };
+		E5AE2074252820B900F98C66 /* JerryKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JerryKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AE2076252820B900F98C66 /* JerryKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JerryKitTests.swift; sourceTree = "<group>"; };
+		E5AE2078252820B900F98C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E58D4B5E2527A5E700C84005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AE2071252820B900F98C66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				E58D4B632527A5E700C84005 /* JerryKit */,
+				E5AE2075252820B900F98C66 /* JerryKitTests */,
 				E58D4B622527A5E700C84005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				E58D4B612527A5E700C84005 /* JerryKit.app */,
+				E5AE2074252820B900F98C66 /* JerryKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +127,15 @@
 			path = JyBase;
 			sourceTree = "<group>";
 		};
+		E5AE2075252820B900F98C66 /* JerryKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5AE2076252820B900F98C66 /* JerryKitTests.swift */,
+				E5AE2078252820B900F98C66 /* Info.plist */,
+			);
+			path = JerryKitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,6 +156,24 @@
 			productReference = E58D4B612527A5E700C84005 /* JerryKit.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E5AE2073252820B900F98C66 /* JerryKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5AE207B252820B900F98C66 /* Build configuration list for PBXNativeTarget "JerryKitTests" */;
+			buildPhases = (
+				E5AE2070252820B900F98C66 /* Sources */,
+				E5AE2071252820B900F98C66 /* Frameworks */,
+				E5AE2072252820B900F98C66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5AE207A252820B900F98C66 /* PBXTargetDependency */,
+			);
+			name = JerryKitTests;
+			productName = JerryKitTests;
+			productReference = E5AE2074252820B900F98C66 /* JerryKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -137,6 +187,10 @@
 					E58D4B602527A5E700C84005 = {
 						CreatedOnToolsVersion = 11.3.1;
 						LastSwiftMigration = 1130;
+					};
+					E5AE2073252820B900F98C66 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = E58D4B602527A5E700C84005;
 					};
 				};
 			};
@@ -154,6 +208,7 @@
 			projectRoot = "";
 			targets = (
 				E58D4B602527A5E700C84005 /* JerryKit */,
+				E5AE2073252820B900F98C66 /* JerryKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +221,13 @@
 				E58D4B712527A5EA00C84005 /* LaunchScreen.storyboard in Resources */,
 				E58D4B6E2527A5EA00C84005 /* Assets.xcassets in Resources */,
 				E58D4B6C2527A5E700C84005 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5AE2072252820B900F98C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,7 +247,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E5AE2070252820B900F98C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5AE2077252820B900F98C66 /* JerryKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5AE207A252820B900F98C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E58D4B602527A5E700C84005 /* JerryKit */;
+			targetProxy = E5AE2079252820B900F98C66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E58D4B6A2527A5E700C84005 /* Main.storyboard */ = {
@@ -360,6 +438,44 @@
 			};
 			name = Release;
 		};
+		E5AE207C252820B900F98C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JerryKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jerry987123.JerryKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JerryKit.app/JerryKit";
+			};
+			name = Debug;
+		};
+		E5AE207D252820B900F98C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JerryKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jerry987123.JerryKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JerryKit.app/JerryKit";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -377,6 +493,15 @@
 			buildConfigurations = (
 				E58D4B762527A5EA00C84005 /* Debug */,
 				E58D4B772527A5EA00C84005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5AE207B252820B900F98C66 /* Build configuration list for PBXNativeTarget "JerryKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5AE207C252820B900F98C66 /* Debug */,
+				E5AE207D252820B900F98C66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
