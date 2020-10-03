@@ -21,4 +21,10 @@ public class JyLocation {
             return false
         }
     }
+    // MARK: - 計算2點的距離
+    public func calculateTrigonometric(lat1:Double, lng1:Double, lat2:Double, lng2:Double) -> Double {
+        let point1 = CLLocation(latitude: lat1, longitude: lng1)
+        let point2 = CLLocation(latitude: lat2, longitude: lng2)
+        return point1.distance(from: point2)
+    }
 }

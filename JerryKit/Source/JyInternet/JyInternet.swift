@@ -34,4 +34,26 @@ public class JyInternet {
             }
         }
     }
+    // MARK: 偵測是否開啟wifi，即使沒有連線
+    func isWifiEnabled() -> Bool {
+        var addresses = [String]()
+        
+        var ifaddr : UnsafeMutablePointer<ifaddrs>?
+        guard getifaddrs(&ifaddr) == 0 else { return false }
+        guard let firstAddr = ifaddr else { return false }
+        
+        for ptr in sequence(first: firstAddr, next: { $0.pointee.ifa_next }) {
+            addresses.append(String(cString: ptr.pointee.ifa_name))
+        }
+        
+        var counts:[String:Int] = [:]
+        
+        for item in addresses {
+            counts[item] = (counts[item] ?? 0) + 1
+        }
+        
+        freeifaddrs(ifaddr)
+        guard let count = counts["awdl0"] else { return false }
+        return count > 1
+    }
 }
