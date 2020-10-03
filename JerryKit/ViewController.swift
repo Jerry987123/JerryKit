@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        JyCommFuns().test()
+        print("normal print")
+        dprint("special dprint")
+        dprint("special dprint", "test 2")
+        if JyInternet().checkInternetFunction(){
+            
+        }
     }
 }
 
