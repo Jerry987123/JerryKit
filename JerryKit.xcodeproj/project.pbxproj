@@ -20,6 +20,7 @@
 		E5AE20822528271100F98C66 /* JyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20812528271000F98C66 /* JyDate.swift */; };
 		E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20832528294600F98C66 /* JyDateTest.swift */; };
 		E5E13AE025287FEB0018AB61 /* JySqliteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E13ADF25287FEB0018AB61 /* JySqliteTest.swift */; };
+		E5E13AE225289CA60018AB61 /* JyLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E13AE125289CA60018AB61 /* JyLocationManager.swift */; };
 		E5F6CC28252866850008CD47 /* JyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC27252866850008CD47 /* JyLocation.swift */; };
 		E5F6CC2B25286AC50008CD47 /* JyMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC2A25286AC50008CD47 /* JyMobile.swift */; };
 		E5F6CC2E252872580008CD47 /* JyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC2D252872580008CD47 /* JyLayout.swift */; };
@@ -59,6 +60,7 @@
 		E5AE20812528271000F98C66 /* JyDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDate.swift; sourceTree = "<group>"; };
 		E5AE20832528294600F98C66 /* JyDateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDateTest.swift; sourceTree = "<group>"; };
 		E5E13ADF25287FEB0018AB61 /* JySqliteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JySqliteTest.swift; sourceTree = "<group>"; };
+		E5E13AE125289CA60018AB61 /* JyLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyLocationManager.swift; sourceTree = "<group>"; };
 		E5F6CC27252866850008CD47 /* JyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyLocation.swift; sourceTree = "<group>"; };
 		E5F6CC2A25286AC50008CD47 /* JyMobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyMobile.swift; sourceTree = "<group>"; };
 		E5F6CC2D252872580008CD47 /* JyLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyLayout.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				E5F6CC27252866850008CD47 /* JyLocation.swift */,
+				E5E13AE125289CA60018AB61 /* JyLocationManager.swift */,
 			);
 			path = JyLocation;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				E5AE206B2528173B00F98C66 /* Reachability.m in Sources */,
 				E5F6CC2E252872580008CD47 /* JyLayout.swift in Sources */,
 				E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */,
+				E5E13AE225289CA60018AB61 /* JyLocationManager.swift in Sources */,
 				E5F6CC28252866850008CD47 /* JyLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
