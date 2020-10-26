@@ -23,7 +23,7 @@ class JySqliteTest {
     }
     func createTable(){
         let db = JySqlite()
-        db.createTable(tableName: tableName,
+        _ = db.createTable(tableName: tableName,
                         columns: [
                             "string TEXT PRIMARY KEY NOT NULL",
                             "number Integer NULL",

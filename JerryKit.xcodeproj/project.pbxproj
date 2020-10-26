@@ -19,6 +19,8 @@
 		E5AE2077252820B900F98C66 /* JerryKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE2076252820B900F98C66 /* JerryKitTests.swift */; };
 		E5AE20822528271100F98C66 /* JyDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20812528271000F98C66 /* JyDate.swift */; };
 		E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AE20832528294600F98C66 /* JyDateTest.swift */; };
+		E5BB2E0F2547283A00B462AD /* ModelDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB2E0E2547283A00B462AD /* ModelDB.swift */; };
+		E5BB2E1125472B0E00B462AD /* ModelDBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BB2E1025472B0E00B462AD /* ModelDBTest.swift */; };
 		E5E13AE025287FEB0018AB61 /* JySqliteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E13ADF25287FEB0018AB61 /* JySqliteTest.swift */; };
 		E5E13AE225289CA60018AB61 /* JyLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E13AE125289CA60018AB61 /* JyLocationManager.swift */; };
 		E5F6CC28252866850008CD47 /* JyLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F6CC27252866850008CD47 /* JyLocation.swift */; };
@@ -59,6 +61,8 @@
 		E5AE2078252820B900F98C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5AE20812528271000F98C66 /* JyDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDate.swift; sourceTree = "<group>"; };
 		E5AE20832528294600F98C66 /* JyDateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyDateTest.swift; sourceTree = "<group>"; };
+		E5BB2E0E2547283A00B462AD /* ModelDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDB.swift; sourceTree = "<group>"; };
+		E5BB2E1025472B0E00B462AD /* ModelDBTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDBTest.swift; sourceTree = "<group>"; };
 		E5E13ADF25287FEB0018AB61 /* JySqliteTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JySqliteTest.swift; sourceTree = "<group>"; };
 		E5E13AE125289CA60018AB61 /* JyLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyLocationManager.swift; sourceTree = "<group>"; };
 		E5F6CC27252866850008CD47 /* JyLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JyLocation.swift; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 			children = (
 				E5F6CC3625287E1D0008CD47 /* JySqlite.swift */,
 				E5E13ADF25287FEB0018AB61 /* JySqliteTest.swift */,
+				E5BB2E0E2547283A00B462AD /* ModelDB.swift */,
+				E5BB2E1025472B0E00B462AD /* ModelDBTest.swift */,
 			);
 			path = JySqlite;
 			sourceTree = "<group>";
@@ -332,11 +338,13 @@
 				E5AE206D2528180200F98C66 /* JyBaseFuns.swift in Sources */,
 				E5AE2067252814AD00F98C66 /* JyInternet.swift in Sources */,
 				E5AE20822528271100F98C66 /* JyDate.swift in Sources */,
+				E5BB2E0F2547283A00B462AD /* ModelDB.swift in Sources */,
 				E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */,
 				E5F6CC3725287E1D0008CD47 /* JySqlite.swift in Sources */,
 				E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */,
 				E5AE206B2528173B00F98C66 /* Reachability.m in Sources */,
 				E5F6CC2E252872580008CD47 /* JyLayout.swift in Sources */,
+				E5BB2E1125472B0E00B462AD /* ModelDBTest.swift in Sources */,
 				E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */,
 				E5E13AE225289CA60018AB61 /* JyLocationManager.swift in Sources */,
 				E5F6CC28252866850008CD47 /* JyLocation.swift in Sources */,

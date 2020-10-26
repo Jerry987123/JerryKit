@@ -38,17 +38,19 @@ class JySqlite {
     }
     
     // create
-    func createTable(tableName:String, columns:[String]){
+    func createTable(tableName:String, columns:[String]) -> Bool {
         let sql = "create table if not exists \(tableName) "
             + "(\(columns.joined(separator: ",")))"
         if sqlite3_exec(db, (sql as NSString).utf8String, nil, nil, nil) == SQLITE_OK {
             dprint("\(sql) successfully")
+            return true
         } else {
             dprint("\(sql) fail")
+            return false
         }
     }
     // create double key
-    func createTable(tableName:String, columns:[String], keys:[String]){
+    func createTable(tableName:String, columns:[String], keys:[String]) -> Bool {
         var sql = "create table if not exists \(tableName) "
             + "(\(columns.joined(separator: ","))"
         sql += ",PRIMARY KEY ("
@@ -59,8 +61,10 @@ class JySqlite {
         sql += "))"
         if sqlite3_exec(db, (sql as NSString).utf8String, nil, nil, nil) == SQLITE_OK {
             dprint("\(sql) successfully")
+            return true
         } else {
             dprint("\(sql) fail")
+            return false
         }
     }
     // insert single line
