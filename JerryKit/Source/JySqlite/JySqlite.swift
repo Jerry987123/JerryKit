@@ -195,6 +195,80 @@ class JySqlite {
         sqlite3_prepare_v2(db, (sql as NSString).utf8String, -1, &statement, nil)
         return statement
     }
+    func readSql<T>(statement:OpaquePointer?, model:T) -> String where T : Codable {
+        let mirror = Mirror(reflecting: model) // model
+        var valueStrings = "["
+        while sqlite3_step(statement) == SQLITE_ROW {
+            var valueString = "{"
+            for (index, data) in mirror.children.enumerated() {
+                if index != 0 {
+                    valueString += ","
+                } else {
+                    // do nothing
+                }
+                guard let label = data.label else {
+                    dprint("readsql can't get label")
+                    continue
+                }
+                if sqlite3_column_bytes(statement, Int32(index)) != 0 {
+                    let valueType = type(of: data.value)
+                    if valueType == String.self || valueType == Optional<String>.self {
+                        var dbValue = String(cString: sqlite3_column_text(statement, Int32(index)))
+                        // 跳脫字元需要特別處理，以避免JSON轉換出錯
+                        if dbValue.contains("\r\n") {
+                            dbValue = dbValue.replacingOccurrences(of: "\r\n", with: "\n")
+                        }
+                        if dbValue.contains("\r") {
+                            dbValue = dbValue.replacingOccurrences(of: "\r", with: "\n")
+                        }
+                        if dbValue.contains("\n") {
+                            dbValue = dbValue.replacingOccurrences(of: "\n", with: "\\n")
+                        }
+                        if dbValue.contains("\t") {
+                            dbValue = dbValue.replacingOccurrences(of: "\t", with: "\\t")
+                        }
+                        if dbValue.contains("\"") {
+                            dbValue = dbValue.replacingOccurrences(of: "\"", with: "\\\"")
+                        }
+                        valueString += "\"\(label)\":\"\(dbValue)\""
+                    } else if valueType == Int.self || valueType == Optional<Int>.self {
+                        let dbValue = Int(sqlite3_column_int(statement, Int32(index)))
+                        valueString += "\"\(label)\":\(dbValue)"
+                    } else if valueType == Double.self || valueType == Optional<Double>.self {
+                        let dbValue = Double(sqlite3_column_double(statement, Int32(index)))
+                        valueString += "\"\(label)\":\(dbValue)"
+                    } else {
+                        dprint("other type:\(data.value)")
+                        dprint(valueType)
+                    }
+                } else {
+                    let valueType = type(of: data.value)
+                    if valueType == String.self {
+//                        dprint("\(label)-\(valueType)型態的空字串")
+                        valueString += "\"\(label)\":\"\""
+                    } else if valueType == Optional<String>.self {
+                        if sqlite3_column_text(statement, Int32(index)) != nil {
+//                            dprint("\(label)-\(valueType)型態的空字串")
+                            valueString += "\"\(label)\":\"\""
+                        } else {
+                            valueString += "\"\(label)\":null"
+                        }
+                    } else {
+                        valueString += "\"\(label)\":null"
+                    }
+                }
+            }
+            valueString += "}"
+            valueStrings += valueString + ","
+        }
+        if valueStrings.count > 1 {
+            valueStrings.removeLast()
+        } else {
+            // do nothing
+        }
+        valueStrings += "]"
+        return valueStrings
+    }
     // update
     func update(tableName:String, cond:String?, rows:[String:String]) -> Bool {
         var state = false
