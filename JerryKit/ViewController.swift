@@ -20,7 +20,8 @@ class ViewController: UIViewController {
 //        GCPWorkItemPractice().startTest()
 //        GCPSemaphorePractice().startTest()
         // Lock
-        OSUnfairLockPractice().startTest()
+//        OSUnfairLockPractice().startTest()
+        PthreadMutexRecursivePractice().startTest()
     }
 
 }
