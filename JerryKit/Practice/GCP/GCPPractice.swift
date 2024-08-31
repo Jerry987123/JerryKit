@@ -11,7 +11,8 @@ class GCPPractice {
 //        startTest1()
 //        startTest2()
 //        startTest3()
-        startTest4()
+//        startTest4()
+        startTest5()
     }
 
 }
@@ -36,7 +37,7 @@ extension GCPPractice {
     //        Task 1 finished
     //        Task 2 started
     //        Task 2 finished
-    func startTest2() {
+    private func startTest2() {
         let serialQueue = DispatchQueue(label: "GCPPractice")
         serialQueue.async {
             self.task1()
@@ -50,7 +51,7 @@ extension GCPPractice {
     //        Task 1 finished
     //        Task 2 started
     //        Task 2 finished
-    func startTest3() {
+    private func startTest3() {
         let serialQueue = DispatchQueue(label: "GCPPractice", attributes: .concurrent)
         serialQueue.sync {
             task1()
@@ -64,7 +65,7 @@ extension GCPPractice {
     //        Task 2 finished
     //        等3秒
     //        Task 1 finished
-    func startTest4() {
+    private func startTest4() {
         let serialQueue = DispatchQueue(label: "GCPPractice", attributes: .concurrent)
         serialQueue.async {
             self.task1()
@@ -73,6 +74,14 @@ extension GCPPractice {
             self.task2()
         }
     }
+    
+    private func startTest5() {
+        print("Task started")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+          print("task finished")
+        }
+    }
+    
     private func task1() {
         print("Task 1 started")
         // make task1 take longer than task2

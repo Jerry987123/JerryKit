@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         // btn test
 //        addBtn()
         // GCP test
-//        GCPPractice().startTest()
-        GCPGroupPractice().startTest()
+        GCPPractice().startTest()
+//        GCPGroupPractice().startTest()
     }
 
 }
