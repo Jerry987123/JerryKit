@@ -49,16 +49,16 @@ class GCPSemaphorePractice2 {
         
         // Run the tasks concurrently
         concurrentQueue.async { [self] in
-            taskOne()
+            taskOne(semaphore: semaphore)
         }
         
         concurrentQueue.async { [self] in
-            taskTwo()
+            taskTwo(semaphore: semaphore)
         }
     }
     
     // Concurrent tasks
-    private func taskOne() {
+    private func taskOne(semaphore: DispatchSemaphore) {
         semaphore.wait() // Acquire the semaphore permit
         for _ in 1...5 {
             print(Thread.current)
@@ -68,7 +68,7 @@ class GCPSemaphorePractice2 {
         semaphore.signal() // Release the semaphore permit
     }
     
-    private func taskTwo() {
+    private func taskTwo(semaphore: DispatchSemaphore) {
         semaphore.wait() // Acquire the semaphore permit
         for _ in 1...5 {
             print(Thread.current)
