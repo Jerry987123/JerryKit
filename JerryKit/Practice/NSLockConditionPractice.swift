@@ -24,7 +24,7 @@ class NSLockConditionPractice2 {
 
     func test() {
         // 設定 0.5 秒會從工廠生產一個產品
-        let timer = [Timer .scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { [self] (timer) in
+        _ = [Timer .scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { [self] (timer) in
             count += 0.5
             if count > 10 {
                 swtich = false

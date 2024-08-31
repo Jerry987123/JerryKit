@@ -29,7 +29,7 @@ class pthreadMutexConditionPractice2 {
         pthread_cond_init(&pCondition, nil)
         
         // 設定 0.5 秒會從工廠生產一個產品
-        let timer = [Timer .scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { [self] (timer) in
+        _ = [Timer .scheduledTimer(withTimeInterval: 0.5, repeats: true, block: { [self] (timer) in
             print("timer start")
             count += 0.5
             if count > 10 {
