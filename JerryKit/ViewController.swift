@@ -21,7 +21,8 @@ class ViewController: UIViewController {
 //        GCPSemaphorePractice().startTest()
         // Lock
 //        OSUnfairLockPractice().startTest()
-        PthreadMutexRecursivePractice().startTest()
+//        PthreadMutexRecursivePractice().startTest()
+        pthreadMutexConditionPractice().startTest()
     }
 
 }
