@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addBtn()
+        // btn test
+//        addBtn()
+        // GCP test
+        GCPPractice().startTest()
     }
 
 }
