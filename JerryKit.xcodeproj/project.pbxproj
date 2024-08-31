@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5CDA19EA2C82F2E600552A37 /* GCPPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19E92C82F2C300552A37 /* GCPPractice.swift */; };
+		5CDA19EE2C82F78600552A37 /* GCPGroupPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19ED2C82F78000552A37 /* GCPGroupPractice.swift */; };
 		E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B642527A5E700C84005 /* AppDelegate.swift */; };
 		E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B662527A5E700C84005 /* SceneDelegate.swift */; };
 		E58D4B692527A5E700C84005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B682527A5E700C84005 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		5CDA19E92C82F2C300552A37 /* GCPPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCPPractice.swift; sourceTree = "<group>"; };
+		5CDA19ED2C82F78000552A37 /* GCPGroupPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCPGroupPractice.swift; sourceTree = "<group>"; };
 		E58D4B612527A5E700C84005 /* JerryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JerryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D4B642527A5E700C84005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58D4B662527A5E700C84005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CDA19EB2C82F76700552A37 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				5CDA19EC2C82F77300552A37 /* GCP */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		5CDA19EC2C82F77300552A37 /* GCP */ = {
+			isa = PBXGroup;
+			children = (
+				5CDA19ED2C82F78000552A37 /* GCPGroupPractice.swift */,
+				5CDA19E92C82F2C300552A37 /* GCPPractice.swift */,
+			);
+			path = GCP;
+			sourceTree = "<group>";
+		};
 		E58D4B582527A5E700C84005 = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +137,11 @@
 		E58D4B632527A5E700C84005 /* JerryKit */ = {
 			isa = PBXGroup;
 			children = (
+				5CDA19EB2C82F76700552A37 /* Practice */,
 				E58D4B7A2527A65300C84005 /* Source */,
 				E58D4B642527A5E700C84005 /* AppDelegate.swift */,
 				E58D4B662527A5E700C84005 /* SceneDelegate.swift */,
 				E58D4B682527A5E700C84005 /* ViewController.swift */,
-				5CDA19E92C82F2C300552A37 /* GCPPractice.swift */,
 				E58D4B6A2527A5E700C84005 /* Main.storyboard */,
 				E58D4B6D2527A5EA00C84005 /* Assets.xcassets */,
 				E58D4B6F2527A5EA00C84005 /* LaunchScreen.storyboard */,
@@ -351,6 +370,7 @@
 				E5BB2E1125472B0E00B462AD /* ModelDBTest.swift in Sources */,
 				E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */,
 				E5E13AE225289CA60018AB61 /* JyLocationManager.swift in Sources */,
+				5CDA19EE2C82F78600552A37 /* GCPGroupPractice.swift in Sources */,
 				E5F6CC28252866850008CD47 /* JyLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,12 +17,12 @@ class GCPPractice {
 }
 // private
 extension GCPPractice {
+    //        Task 1 started
+    //        等3秒
+    //        Task 1 finished
+    //        Task 2 started
+    //        Task 2 finished
     private func startTest1() {
-//        Task 1 started
-//        等3秒
-//        Task 1 finished
-//        Task 2 started
-//        Task 2 finished
         let serialQueue = DispatchQueue(label: "GCPPractice")
         serialQueue.sync {
             task1()
@@ -31,12 +31,12 @@ extension GCPPractice {
             task2()
         }
     }
+    //        Task 1 started
+    //        等3秒
+    //        Task 1 finished
+    //        Task 2 started
+    //        Task 2 finished
     func startTest2() {
-//        Task 1 started
-//        等3秒
-//        Task 1 finished
-//        Task 2 started
-//        Task 2 finished
         let serialQueue = DispatchQueue(label: "GCPPractice")
         serialQueue.async {
             self.task1()
@@ -45,12 +45,12 @@ extension GCPPractice {
             self.task2()
         }
     }
+    //        Task 1 started
+    //        等3秒
+    //        Task 1 finished
+    //        Task 2 started
+    //        Task 2 finished
     func startTest3() {
-//        Task 1 started
-//        等3秒
-//        Task 1 finished
-//        Task 2 started
-//        Task 2 finished
         let serialQueue = DispatchQueue(label: "GCPPractice", attributes: .concurrent)
         serialQueue.sync {
             task1()
@@ -59,12 +59,12 @@ extension GCPPractice {
             task2()
         }
     }
+    //        Task 1 started
+    //        Task 2 started
+    //        Task 2 finished
+    //        等3秒
+    //        Task 1 finished
     func startTest4() {
-//        Task 1 started
-//        Task 2 started
-//        Task 2 finished
-//        等3秒
-//        Task 1 finished
         let serialQueue = DispatchQueue(label: "GCPPractice", attributes: .concurrent)
         serialQueue.async {
             self.task1()
