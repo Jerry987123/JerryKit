@@ -77,5 +77,4 @@ class GCPSemaphorePractice2 {
         }
         semaphore.signal() // Release the semaphore permit
     }
-   
 }

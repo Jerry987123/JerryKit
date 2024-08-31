@@ -18,7 +18,9 @@ class ViewController: UIViewController {
 //        GCPPractice().startTest()
 //        GCPGroupPractice().startTest()
 //        GCPWorkItemPractice().startTest()
-        GCPSemaphorePractice().startTest()
+//        GCPSemaphorePractice().startTest()
+        // Lock
+        OSUnfairLockPractice().startTest()
     }
 
 }
