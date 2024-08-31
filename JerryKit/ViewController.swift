@@ -23,7 +23,8 @@ class ViewController: UIViewController {
 //        OSUnfairLockPractice().startTest()
 //        PthreadMutexRecursivePractice().startTest()
 //        pthreadMutexConditionPractice().startTest()
-        NSLockPractice().startTest()
+//        NSLockPractice().startTest()
+        NSLockConditionPractice().startTest()
     }
 
 }
