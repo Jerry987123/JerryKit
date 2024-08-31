@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         let btn = UIButton()
         btn.addTarget(self, action: #selector(tap), for: .touchUpInside)
         btn.backgroundColor = .yellow
+        btn.setTitle("show web", for: .normal)
+        btn.setTitleColor(.black, for: .normal)
         view.addSubview(btn)
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.widthAnchor.constraint(equalToConstant: 100).isActive = true
