@@ -14,7 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         addBtn()
     }
-    func addBtn(){
+
+}
+// private
+extension ViewController {
+    private func addBtn(){
         let btn = UIButton()
         btn.addTarget(self, action: #selector(tap), for: .touchUpInside)
         btn.backgroundColor = .yellow
@@ -27,7 +31,7 @@ class ViewController: UIViewController {
         btn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         btn.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
-    @objc func tap(){
+    @objc private func tap(){
         JyInternet().showWeb("https://www.google.com")
     }
 }
