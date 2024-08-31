@@ -14,6 +14,7 @@
 		5CDA19F62C8362C100552A37 /* OSUnfairLockPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19F52C8362BB00552A37 /* OSUnfairLockPractice.swift */; };
 		5CDA19F82C83705B00552A37 /* PthreadMutexRecursivePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19F72C83703800552A37 /* PthreadMutexRecursivePractice.swift */; };
 		5CDA19FA2C83785E00552A37 /* pthreadMutexConditionPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19F92C83784F00552A37 /* pthreadMutexConditionPractice.swift */; };
+		5CDA19FC2C83892900552A37 /* NSLockPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19FB2C83892200552A37 /* NSLockPractice.swift */; };
 		E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B642527A5E700C84005 /* AppDelegate.swift */; };
 		E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B662527A5E700C84005 /* SceneDelegate.swift */; };
 		E58D4B692527A5E700C84005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B682527A5E700C84005 /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		5CDA19F52C8362BB00552A37 /* OSUnfairLockPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSUnfairLockPractice.swift; sourceTree = "<group>"; };
 		5CDA19F72C83703800552A37 /* PthreadMutexRecursivePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PthreadMutexRecursivePractice.swift; sourceTree = "<group>"; };
 		5CDA19F92C83784F00552A37 /* pthreadMutexConditionPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pthreadMutexConditionPractice.swift; sourceTree = "<group>"; };
+		5CDA19FB2C83892200552A37 /* NSLockPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLockPractice.swift; sourceTree = "<group>"; };
 		E58D4B612527A5E700C84005 /* JerryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JerryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D4B642527A5E700C84005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58D4B662527A5E700C84005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				5CDA19F52C8362BB00552A37 /* OSUnfairLockPractice.swift */,
 				5CDA19F72C83703800552A37 /* PthreadMutexRecursivePractice.swift */,
 				5CDA19F92C83784F00552A37 /* pthreadMutexConditionPractice.swift */,
+				5CDA19FB2C83892200552A37 /* NSLockPractice.swift */,
 				5CDA19EC2C82F77300552A37 /* GCP */,
 			);
 			path = Practice;
@@ -375,6 +378,7 @@
 				E58D4B692527A5E700C84005 /* ViewController.swift in Sources */,
 				E5AE206D2528180200F98C66 /* JyBaseFuns.swift in Sources */,
 				E5AE2067252814AD00F98C66 /* JyInternet.swift in Sources */,
+				5CDA19FC2C83892900552A37 /* NSLockPractice.swift in Sources */,
 				E5AE20822528271100F98C66 /* JyDate.swift in Sources */,
 				E5BB2E0F2547283A00B462AD /* ModelDB.swift in Sources */,
 				E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */,
