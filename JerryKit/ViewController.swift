@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var basePractice: BasePractice?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,8 @@ class ViewController: UIViewController {
 //        GCPWorkItemPractice().startTest()
 //        GCPSemaphorePractice().startTest()
         // Operation
-        BlockOperationPracrtice().startTest()
+//        BlockOperationPracrtice().startTest()
+        basePractice = CustomOperationPractice()
         // Lock
 //        OSUnfairLockPractice().startTest()
 //        PthreadMutexRecursivePractice().startTest()
@@ -28,6 +31,8 @@ class ViewController: UIViewController {
 //        NSLockPractice().startTest()
 //        NSLockConditionPractice().startTest()
 //        NSLockConditionLockPractice().startTest()
+        
+        basePractice?.startTest()
     }
 
 }

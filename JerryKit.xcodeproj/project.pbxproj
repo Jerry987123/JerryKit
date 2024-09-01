@@ -18,6 +18,8 @@
 		5CDA19FE2C838A4B00552A37 /* NSLockConditionPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19FD2C838A4100552A37 /* NSLockConditionPractice.swift */; };
 		5CDA1A002C838C1D00552A37 /* NSLockConditionLockPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19FF2C838C0F00552A37 /* NSLockConditionLockPractice.swift */; };
 		5CE39C762C83FC7800D7E658 /* BlockOperationPracrtice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C752C83FC6C00D7E658 /* BlockOperationPracrtice.swift */; };
+		5CE39C782C83FEA300D7E658 /* CustomOperationPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */; };
+		5CE39C7A2C84025200D7E658 /* BasePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C792C84024D00D7E658 /* BasePractice.swift */; };
 		E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B642527A5E700C84005 /* AppDelegate.swift */; };
 		E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B662527A5E700C84005 /* SceneDelegate.swift */; };
 		E58D4B692527A5E700C84005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B682527A5E700C84005 /* ViewController.swift */; };
@@ -65,6 +67,8 @@
 		5CDA19FD2C838A4100552A37 /* NSLockConditionPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLockConditionPractice.swift; sourceTree = "<group>"; };
 		5CDA19FF2C838C0F00552A37 /* NSLockConditionLockPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLockConditionLockPractice.swift; sourceTree = "<group>"; };
 		5CE39C752C83FC6C00D7E658 /* BlockOperationPracrtice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockOperationPracrtice.swift; sourceTree = "<group>"; };
+		5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperationPractice.swift; sourceTree = "<group>"; };
+		5CE39C792C84024D00D7E658 /* BasePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePractice.swift; sourceTree = "<group>"; };
 		E58D4B612527A5E700C84005 /* JerryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JerryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D4B642527A5E700C84005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58D4B662527A5E700C84005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				5CE39C752C83FC6C00D7E658 /* BlockOperationPracrtice.swift */,
+				5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				5CDA19EB2C82F76700552A37 /* Practice */,
+				5CE39C792C84024D00D7E658 /* BasePractice.swift */,
 				E58D4B7A2527A65300C84005 /* Source */,
 				E58D4B642527A5E700C84005 /* AppDelegate.swift */,
 				E58D4B662527A5E700C84005 /* SceneDelegate.swift */,
@@ -409,10 +415,12 @@
 				E5AE2067252814AD00F98C66 /* JyInternet.swift in Sources */,
 				5CDA19FC2C83892900552A37 /* NSLockPractice.swift in Sources */,
 				E5AE20822528271100F98C66 /* JyDate.swift in Sources */,
+				5CE39C782C83FEA300D7E658 /* CustomOperationPractice.swift in Sources */,
 				E5BB2E0F2547283A00B462AD /* ModelDB.swift in Sources */,
 				E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */,
 				E5F6CC3725287E1D0008CD47 /* JySqlite.swift in Sources */,
 				E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */,
+				5CE39C7A2C84025200D7E658 /* BasePractice.swift in Sources */,
 				5CDA19F42C83198F00552A37 /* GCPSemaphorePractice.swift in Sources */,
 				5CDA19EA2C82F2E600552A37 /* GCPPractice.swift in Sources */,
 				E5AE206B2528173B00F98C66 /* Reachability.m in Sources */,
