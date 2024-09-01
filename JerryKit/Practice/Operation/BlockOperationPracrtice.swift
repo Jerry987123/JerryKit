@@ -13,7 +13,10 @@ class BlockOperationPracrtice {
 }
 extension BlockOperationPracrtice {
     private func test() {
-        let blockOperation = BlockOperation()
+//        let blockOperation = BlockOperation()
+        let blockOperation = BlockOperation {
+            print("blockOperation start: \(Thread.current)")
+        }
         for i in 1...10 {
             blockOperation.addExecutionBlock {
                 sleep(2)

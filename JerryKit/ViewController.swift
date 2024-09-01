@@ -22,9 +22,9 @@ class ViewController: UIViewController {
 //        GCPWorkItemPractice().startTest()
 //        GCPSemaphorePractice().startTest()
         // Operation
-//        BlockOperationPracrtice().startTest()
+        BlockOperationPracrtice().startTest()
 //        basePractice = CustomOperationPractice()
-        basePractice = OperationQueuePractice()
+//        basePractice = OperationQueuePractice()
         // Lock
 //        OSUnfairLockPractice().startTest()
 //        PthreadMutexRecursivePractice().startTest()
