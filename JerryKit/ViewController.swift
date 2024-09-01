@@ -23,7 +23,8 @@ class ViewController: UIViewController {
 //        GCPSemaphorePractice().startTest()
         // Operation
 //        BlockOperationPracrtice().startTest()
-        basePractice = CustomOperationPractice()
+//        basePractice = CustomOperationPractice()
+        basePractice = OperationQueuePractice()
         // Lock
 //        OSUnfairLockPractice().startTest()
 //        PthreadMutexRecursivePractice().startTest()

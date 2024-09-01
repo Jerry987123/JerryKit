@@ -20,6 +20,7 @@
 		5CE39C762C83FC7800D7E658 /* BlockOperationPracrtice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C752C83FC6C00D7E658 /* BlockOperationPracrtice.swift */; };
 		5CE39C782C83FEA300D7E658 /* CustomOperationPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */; };
 		5CE39C7A2C84025200D7E658 /* BasePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C792C84024D00D7E658 /* BasePractice.swift */; };
+		5CE39C7C2C840AC800D7E658 /* OperationQueuePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C7B2C840ABF00D7E658 /* OperationQueuePractice.swift */; };
 		E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B642527A5E700C84005 /* AppDelegate.swift */; };
 		E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B662527A5E700C84005 /* SceneDelegate.swift */; };
 		E58D4B692527A5E700C84005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B682527A5E700C84005 /* ViewController.swift */; };
@@ -69,6 +70,7 @@
 		5CE39C752C83FC6C00D7E658 /* BlockOperationPracrtice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockOperationPracrtice.swift; sourceTree = "<group>"; };
 		5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperationPractice.swift; sourceTree = "<group>"; };
 		5CE39C792C84024D00D7E658 /* BasePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePractice.swift; sourceTree = "<group>"; };
+		5CE39C7B2C840ABF00D7E658 /* OperationQueuePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationQueuePractice.swift; sourceTree = "<group>"; };
 		E58D4B612527A5E700C84005 /* JerryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JerryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D4B642527A5E700C84005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58D4B662527A5E700C84005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				5CE39C752C83FC6C00D7E658 /* BlockOperationPracrtice.swift */,
 				5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */,
+				5CE39C7B2C840ABF00D7E658 /* OperationQueuePractice.swift */,
 			);
 			path = Operation;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				E5AE20822528271100F98C66 /* JyDate.swift in Sources */,
 				5CE39C782C83FEA300D7E658 /* CustomOperationPractice.swift in Sources */,
 				E5BB2E0F2547283A00B462AD /* ModelDB.swift in Sources */,
+				5CE39C7C2C840AC800D7E658 /* OperationQueuePractice.swift in Sources */,
 				E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */,
 				E5F6CC3725287E1D0008CD47 /* JySqlite.swift in Sources */,
 				E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */,
