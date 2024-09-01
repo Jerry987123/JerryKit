@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 //        GCDGroupPractice().startTest()
 //        GCDWorkItemPractice().startTest()
 //        GCDSemaphorePractice().startTest()
-        basePractice = GCDBarrierPractice()
+//        basePractice = GCDBarrierPractice()
         // Operation
 //        BlockOperationPracrtice().startTest()
 //        basePractice = CustomOperationPractice()
@@ -33,6 +33,7 @@ class ViewController: UIViewController {
 //        NSLockPractice().startTest()
 //        NSLockConditionPractice().startTest()
 //        NSLockConditionLockPractice().startTest()
+        basePractice = ActorPractice()
         
         basePractice?.startTest()
     }
