@@ -1,19 +1,19 @@
 //
-//  GCPBarrierPractice.swift
+//  GCDBarrierPractice.swift
 //  JerryKit
 //
 //  Created by Chieh-Yi Wu on 2024/9/1.
 //  Copyright © 2024 Jerry987123. All rights reserved.
 //
 
-class GCPBarrierPractice: BasePractice {
+class GCDBarrierPractice: BasePractice {
     func startTest() {
         test()
     }
 }
-extension GCPBarrierPractice {
+extension GCDBarrierPractice {
     private func test() {
-        let label = "GCPBarrier"
+        let label = "GCDBarrier"
         let queue = DispatchQueue(label: label, attributes: .concurrent)
 
         queue.async {

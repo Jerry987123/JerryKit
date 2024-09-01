@@ -1,17 +1,17 @@
 //
-//  GCPWorkItemPractice.swift
+//  GCDWorkItemPractice.swift
 //  JerryKit
 //
 //  Created by Chieh-Yi Wu on 2024/8/31.
 //  Copyright © 2024 Jerry987123. All rights reserved.
 //
 
-class GCPWorkItemPractice {
+class GCDWorkItemPractice {
     func startTest() {
         test2()
     }
 }
-extension GCPWorkItemPractice {
+extension GCDWorkItemPractice {
 //    123456
 //    Work item is running.
 //    等3秒

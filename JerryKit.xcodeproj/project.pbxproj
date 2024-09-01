@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5CDA19EA2C82F2E600552A37 /* GCPPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19E92C82F2C300552A37 /* GCPPractice.swift */; };
-		5CDA19EE2C82F78600552A37 /* GCPGroupPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19ED2C82F78000552A37 /* GCPGroupPractice.swift */; };
-		5CDA19F02C82FDF900552A37 /* GCPWorkItemPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19EF2C82FDF100552A37 /* GCPWorkItemPractice.swift */; };
-		5CDA19F42C83198F00552A37 /* GCPSemaphorePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19F32C83197800552A37 /* GCPSemaphorePractice.swift */; };
+		5CDA19EA2C82F2E600552A37 /* GCDPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19E92C82F2C300552A37 /* GCDPractice.swift */; };
+		5CDA19EE2C82F78600552A37 /* GCDGroupPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19ED2C82F78000552A37 /* GCDGroupPractice.swift */; };
+		5CDA19F02C82FDF900552A37 /* GCDWorkItemPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19EF2C82FDF100552A37 /* GCDWorkItemPractice.swift */; };
+		5CDA19F42C83198F00552A37 /* GCDSemaphorePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19F32C83197800552A37 /* GCDSemaphorePractice.swift */; };
 		5CDA19F62C8362C100552A37 /* OSUnfairLockPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19F52C8362BB00552A37 /* OSUnfairLockPractice.swift */; };
 		5CDA19F82C83705B00552A37 /* PthreadMutexRecursivePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19F72C83703800552A37 /* PthreadMutexRecursivePractice.swift */; };
 		5CDA19FA2C83785E00552A37 /* pthreadMutexConditionPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19F92C83784F00552A37 /* pthreadMutexConditionPractice.swift */; };
@@ -21,7 +21,7 @@
 		5CE39C782C83FEA300D7E658 /* CustomOperationPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */; };
 		5CE39C7A2C84025200D7E658 /* BasePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C792C84024D00D7E658 /* BasePractice.swift */; };
 		5CE39C7C2C840AC800D7E658 /* OperationQueuePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C7B2C840ABF00D7E658 /* OperationQueuePractice.swift */; };
-		5CE39C7E2C841B5900D7E658 /* GCPBarrierPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C7D2C841B4900D7E658 /* GCPBarrierPractice.swift */; };
+		5CE39C7E2C841B5900D7E658 /* GCDBarrierPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C7D2C841B4900D7E658 /* GCDBarrierPractice.swift */; };
 		E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B642527A5E700C84005 /* AppDelegate.swift */; };
 		E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B662527A5E700C84005 /* SceneDelegate.swift */; };
 		E58D4B692527A5E700C84005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B682527A5E700C84005 /* ViewController.swift */; };
@@ -58,10 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5CDA19E92C82F2C300552A37 /* GCPPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCPPractice.swift; sourceTree = "<group>"; };
-		5CDA19ED2C82F78000552A37 /* GCPGroupPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCPGroupPractice.swift; sourceTree = "<group>"; };
-		5CDA19EF2C82FDF100552A37 /* GCPWorkItemPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCPWorkItemPractice.swift; sourceTree = "<group>"; };
-		5CDA19F32C83197800552A37 /* GCPSemaphorePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCPSemaphorePractice.swift; sourceTree = "<group>"; };
+		5CDA19E92C82F2C300552A37 /* GCDPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDPractice.swift; sourceTree = "<group>"; };
+		5CDA19ED2C82F78000552A37 /* GCDGroupPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDGroupPractice.swift; sourceTree = "<group>"; };
+		5CDA19EF2C82FDF100552A37 /* GCDWorkItemPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDWorkItemPractice.swift; sourceTree = "<group>"; };
+		5CDA19F32C83197800552A37 /* GCDSemaphorePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDSemaphorePractice.swift; sourceTree = "<group>"; };
 		5CDA19F52C8362BB00552A37 /* OSUnfairLockPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSUnfairLockPractice.swift; sourceTree = "<group>"; };
 		5CDA19F72C83703800552A37 /* PthreadMutexRecursivePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PthreadMutexRecursivePractice.swift; sourceTree = "<group>"; };
 		5CDA19F92C83784F00552A37 /* pthreadMutexConditionPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pthreadMutexConditionPractice.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperationPractice.swift; sourceTree = "<group>"; };
 		5CE39C792C84024D00D7E658 /* BasePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePractice.swift; sourceTree = "<group>"; };
 		5CE39C7B2C840ABF00D7E658 /* OperationQueuePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationQueuePractice.swift; sourceTree = "<group>"; };
-		5CE39C7D2C841B4900D7E658 /* GCPBarrierPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCPBarrierPractice.swift; sourceTree = "<group>"; };
+		5CE39C7D2C841B4900D7E658 /* GCDBarrierPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDBarrierPractice.swift; sourceTree = "<group>"; };
 		E58D4B612527A5E700C84005 /* JerryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JerryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D4B642527A5E700C84005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58D4B662527A5E700C84005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,21 +129,21 @@
 			children = (
 				5CE39C742C83FC4300D7E658 /* Operation */,
 				5CE39C732C83FAE500D7E658 /* Lock */,
-				5CDA19EC2C82F77300552A37 /* GCP */,
+				5CDA19EC2C82F77300552A37 /* GCD */,
 			);
 			path = Practice;
 			sourceTree = "<group>";
 		};
-		5CDA19EC2C82F77300552A37 /* GCP */ = {
+		5CDA19EC2C82F77300552A37 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
-				5CDA19F32C83197800552A37 /* GCPSemaphorePractice.swift */,
-				5CE39C7D2C841B4900D7E658 /* GCPBarrierPractice.swift */,
-				5CDA19EF2C82FDF100552A37 /* GCPWorkItemPractice.swift */,
-				5CDA19ED2C82F78000552A37 /* GCPGroupPractice.swift */,
-				5CDA19E92C82F2C300552A37 /* GCPPractice.swift */,
+				5CDA19F32C83197800552A37 /* GCDSemaphorePractice.swift */,
+				5CE39C7D2C841B4900D7E658 /* GCDBarrierPractice.swift */,
+				5CDA19EF2C82FDF100552A37 /* GCDWorkItemPractice.swift */,
+				5CDA19ED2C82F78000552A37 /* GCDGroupPractice.swift */,
+				5CDA19E92C82F2C300552A37 /* GCDPractice.swift */,
 			);
-			path = GCP;
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		5CE39C732C83FAE500D7E658 /* Lock */ = {
@@ -419,7 +419,7 @@
 				E5AE206D2528180200F98C66 /* JyBaseFuns.swift in Sources */,
 				5CDA19FE2C838A4B00552A37 /* NSLockConditionPractice.swift in Sources */,
 				E5AE2067252814AD00F98C66 /* JyInternet.swift in Sources */,
-				5CE39C7E2C841B5900D7E658 /* GCPBarrierPractice.swift in Sources */,
+				5CE39C7E2C841B5900D7E658 /* GCDBarrierPractice.swift in Sources */,
 				5CDA19FC2C83892900552A37 /* NSLockPractice.swift in Sources */,
 				E5AE20822528271100F98C66 /* JyDate.swift in Sources */,
 				5CE39C782C83FEA300D7E658 /* CustomOperationPractice.swift in Sources */,
@@ -429,8 +429,8 @@
 				E5F6CC3725287E1D0008CD47 /* JySqlite.swift in Sources */,
 				E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */,
 				5CE39C7A2C84025200D7E658 /* BasePractice.swift in Sources */,
-				5CDA19F42C83198F00552A37 /* GCPSemaphorePractice.swift in Sources */,
-				5CDA19EA2C82F2E600552A37 /* GCPPractice.swift in Sources */,
+				5CDA19F42C83198F00552A37 /* GCDSemaphorePractice.swift in Sources */,
+				5CDA19EA2C82F2E600552A37 /* GCDPractice.swift in Sources */,
 				E5AE206B2528173B00F98C66 /* Reachability.m in Sources */,
 				5CDA19FA2C83785E00552A37 /* pthreadMutexConditionPractice.swift in Sources */,
 				E5F6CC2E252872580008CD47 /* JyLayout.swift in Sources */,
@@ -438,9 +438,9 @@
 				E5BB2E1125472B0E00B462AD /* ModelDBTest.swift in Sources */,
 				E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */,
 				E5E13AE225289CA60018AB61 /* JyLocationManager.swift in Sources */,
-				5CDA19EE2C82F78600552A37 /* GCPGroupPractice.swift in Sources */,
+				5CDA19EE2C82F78600552A37 /* GCDGroupPractice.swift in Sources */,
 				E5F6CC28252866850008CD47 /* JyLocation.swift in Sources */,
-				5CDA19F02C82FDF900552A37 /* GCPWorkItemPractice.swift in Sources */,
+				5CDA19F02C82FDF900552A37 /* GCDWorkItemPractice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

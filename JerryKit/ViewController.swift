@@ -16,12 +16,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // btn test
 //        addBtn()
-        // GCP test
-//        GCPPractice().startTest()
-//        GCPGroupPractice().startTest()
-//        GCPWorkItemPractice().startTest()
-//        GCPSemaphorePractice().startTest()
-        basePractice = GCPBarrierPractice()
+        // GCD test
+//        GCDPractice().startTest()
+//        GCDGroupPractice().startTest()
+//        GCDWorkItemPractice().startTest()
+//        GCDSemaphorePractice().startTest()
+        basePractice = GCDBarrierPractice()
         // Operation
 //        BlockOperationPracrtice().startTest()
 //        basePractice = CustomOperationPractice()

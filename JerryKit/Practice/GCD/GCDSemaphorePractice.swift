@@ -1,18 +1,18 @@
 //
-//  GCPSemaphorePractice.swift
+//  GCDSemaphorePractice.swift
 //  JerryKit
 //
 //  Created by Chieh-Yi Wu on 2024/8/31.
 //  Copyright © 2024 Jerry987123. All rights reserved.
 //
 
-class GCPSemaphorePractice {
+class GCDSemaphorePractice {
     func startTest() {
 //        test1()
         test2()
     }
 }
-extension GCPSemaphorePractice {
+extension GCDSemaphorePractice {
 //    test start
 //    test wait
 //    process start
@@ -33,10 +33,10 @@ extension GCPSemaphorePractice {
         print("test end")
     }
     private func test2() {
-        GCPSemaphorePractice2().startCount()
+        GCDSemaphorePractice2().startCount()
     }
 }
-class GCPSemaphorePractice2 {
+class GCDSemaphorePractice2 {
     let semaphore = DispatchSemaphore(value: 1)
     
     // Shared resource

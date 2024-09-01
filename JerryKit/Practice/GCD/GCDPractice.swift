@@ -1,12 +1,12 @@
 //
-//  GCPPractice.swift
+//  GCDPractice.swift
 //  JerryKit
 //
 //  Created by Chieh-Yi Wu on 2024/8/31.
 //  Copyright © 2024 Jerry987123. All rights reserved.
 //
 
-class GCPPractice {
+class GCDPractice {
     func startTest() {
 //        startTest1()
 //        startTest2()
@@ -17,14 +17,14 @@ class GCPPractice {
 
 }
 // private
-extension GCPPractice {
+extension GCDPractice {
     //        Task 1 started
     //        等3秒
     //        Task 1 finished
     //        Task 2 started
     //        Task 2 finished
     private func startTest1() {
-        let serialQueue = DispatchQueue(label: "GCPPractice")
+        let serialQueue = DispatchQueue(label: "GCDPractice")
         serialQueue.sync {
             task1()
          }
@@ -38,7 +38,7 @@ extension GCPPractice {
     //        Task 2 started
     //        Task 2 finished
     private func startTest2() {
-        let serialQueue = DispatchQueue(label: "GCPPractice")
+        let serialQueue = DispatchQueue(label: "GCDPractice")
         serialQueue.async {
             self.task1()
          }
@@ -52,7 +52,7 @@ extension GCPPractice {
     //        Task 2 started
     //        Task 2 finished
     private func startTest3() {
-        let serialQueue = DispatchQueue(label: "GCPPractice", attributes: .concurrent)
+        let serialQueue = DispatchQueue(label: "GCDPractice", attributes: .concurrent)
         serialQueue.sync {
             task1()
          }
@@ -66,7 +66,7 @@ extension GCPPractice {
     //        等3秒
     //        Task 1 finished
     private func startTest4() {
-        let serialQueue = DispatchQueue(label: "GCPPractice", attributes: .concurrent)
+        let serialQueue = DispatchQueue(label: "GCDPractice", attributes: .concurrent)
         serialQueue.async {
             self.task1()
          }

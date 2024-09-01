@@ -1,11 +1,11 @@
 //
-//  GCPGroupPractice.swift
+//  GCDGroupPractice.swift
 //  JerryKit
 //
 //  Created by Chieh-Yi Wu on 2024/8/31.
 //  Copyright © 2024 Jerry987123. All rights reserved.
 //
-class GCPGroupPractice {
+class GCDGroupPractice {
     func startTest() {
 //        startTest1()
 //        startTest2()
@@ -13,7 +13,7 @@ class GCPGroupPractice {
         startTest4()
     }
 }
-extension GCPGroupPractice {
+extension GCDGroupPractice {
 //    queue1: 1
 //    queue1: 2
 //    queue1: 3
@@ -26,14 +26,14 @@ extension GCPGroupPractice {
     private func startTest1() {
         let group = DispatchGroup()
                 
-        let queue1 = DispatchQueue(label: "GCPGroup1", attributes: .concurrent)
+        let queue1 = DispatchQueue(label: "GCDGroup1", attributes: .concurrent)
         queue1.async(group: group) {
           for i in 1...3 {
             print("queue1: \(i)")
           }
         }
                 
-        let queue2 = DispatchQueue(label: "GCPGroup2", attributes: .concurrent)
+        let queue2 = DispatchQueue(label: "GCDGroup2", attributes: .concurrent)
         queue2.async(group: group) {
           sleep(3)
           for i in 1...3 {
@@ -59,14 +59,14 @@ extension GCPGroupPractice {
     private func startTest2() {
         let group = DispatchGroup()
                 
-        let queue1 = DispatchQueue(label: "GCPGroup1", attributes: .concurrent)
+        let queue1 = DispatchQueue(label: "GCDGroup1", attributes: .concurrent)
         queue1.async(group: group) {
           for i in 1...3 {
             print("queue1: \(i)")
           }
         }
                 
-        let queue2 = DispatchQueue(label: "GCPGroup2", attributes: .concurrent)
+        let queue2 = DispatchQueue(label: "GCDGroup2", attributes: .concurrent)
         queue2.async(group: group) {
           sleep(3)
           for i in 1...3 {
@@ -91,7 +91,7 @@ extension GCPGroupPractice {
     private func startTest3() {
         let group = DispatchGroup()
                 
-        let queue1 = DispatchQueue(label: "GCPGroup1", attributes: .concurrent)
+        let queue1 = DispatchQueue(label: "GCDGroup1", attributes: .concurrent)
         queue1.async(group: group) {
             DispatchQueue.global().async {
                 for i in 1...3 {
@@ -100,7 +100,7 @@ extension GCPGroupPractice {
             }
         }
                 
-        let queue2 = DispatchQueue(label: "GCPGroup2", attributes: .concurrent)
+        let queue2 = DispatchQueue(label: "GCDGroup2", attributes: .concurrent)
         queue2.async(group: group) {
             DispatchQueue.global().async {
                 sleep(3)
@@ -124,7 +124,7 @@ extension GCPGroupPractice {
     private func startTest4() {
         let group = DispatchGroup()
                 
-        let queue1 = DispatchQueue(label: "GCPGroup1", attributes: .concurrent)
+        let queue1 = DispatchQueue(label: "GCDGroup1", attributes: .concurrent)
         group.enter()
         queue1.async(group: group) {
             DispatchQueue.global().async {
@@ -135,7 +135,7 @@ extension GCPGroupPractice {
             }
         }
                 
-        let queue2 = DispatchQueue(label: "GCPGroup2", attributes: .concurrent)
+        let queue2 = DispatchQueue(label: "GCDGroup2", attributes: .concurrent)
         group.enter()
         queue2.async(group: group) {
             DispatchQueue.global().async {
