@@ -8,14 +8,14 @@
 
 class ActorPractice: BasePractice {
     func startTest() {
-//        test()
 //        test1()
-        test2()
+//        test2()
+        test3()
     }
 }
 
 extension ActorPractice {
-    func test() {
+    private func test1() {
         let store = BalanceStoreActor(accountName: "Tom")
         let accountName = store.accountName
         print(accountName)
@@ -26,7 +26,7 @@ extension ActorPractice {
         }
     }
     // 會有data race
-    func test1() {
+    private func test2() {
         let store = BalanceStore(accountName: "Tom")
         for _ in 0...100 {
             let when = DispatchTime.now() + .milliseconds(100)
@@ -46,7 +46,7 @@ extension ActorPractice {
         }
     }
     // 用actor修正data race
-    func test2() {
+    private func test3() {
         let store = BalanceStoreActor(accountName: "Tom")
         for _ in 0...100 {
             let when = DispatchTime.now() + .milliseconds(100)
