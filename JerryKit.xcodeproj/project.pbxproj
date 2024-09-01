@@ -21,6 +21,7 @@
 		5CE39C782C83FEA300D7E658 /* CustomOperationPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */; };
 		5CE39C7A2C84025200D7E658 /* BasePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C792C84024D00D7E658 /* BasePractice.swift */; };
 		5CE39C7C2C840AC800D7E658 /* OperationQueuePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C7B2C840ABF00D7E658 /* OperationQueuePractice.swift */; };
+		5CE39C7E2C841B5900D7E658 /* GCPBarrierPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE39C7D2C841B4900D7E658 /* GCPBarrierPractice.swift */; };
 		E58D4B652527A5E700C84005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B642527A5E700C84005 /* AppDelegate.swift */; };
 		E58D4B672527A5E700C84005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B662527A5E700C84005 /* SceneDelegate.swift */; };
 		E58D4B692527A5E700C84005 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D4B682527A5E700C84005 /* ViewController.swift */; };
@@ -71,6 +72,7 @@
 		5CE39C772C83FE9B00D7E658 /* CustomOperationPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperationPractice.swift; sourceTree = "<group>"; };
 		5CE39C792C84024D00D7E658 /* BasePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePractice.swift; sourceTree = "<group>"; };
 		5CE39C7B2C840ABF00D7E658 /* OperationQueuePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationQueuePractice.swift; sourceTree = "<group>"; };
+		5CE39C7D2C841B4900D7E658 /* GCPBarrierPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCPBarrierPractice.swift; sourceTree = "<group>"; };
 		E58D4B612527A5E700C84005 /* JerryKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JerryKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D4B642527A5E700C84005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58D4B662527A5E700C84005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				5CDA19F32C83197800552A37 /* GCPSemaphorePractice.swift */,
+				5CE39C7D2C841B4900D7E658 /* GCPBarrierPractice.swift */,
 				5CDA19EF2C82FDF100552A37 /* GCPWorkItemPractice.swift */,
 				5CDA19ED2C82F78000552A37 /* GCPGroupPractice.swift */,
 				5CDA19E92C82F2C300552A37 /* GCPPractice.swift */,
@@ -416,6 +419,7 @@
 				E5AE206D2528180200F98C66 /* JyBaseFuns.swift in Sources */,
 				5CDA19FE2C838A4B00552A37 /* NSLockConditionPractice.swift in Sources */,
 				E5AE2067252814AD00F98C66 /* JyInternet.swift in Sources */,
+				5CE39C7E2C841B5900D7E658 /* GCPBarrierPractice.swift in Sources */,
 				5CDA19FC2C83892900552A37 /* NSLockPractice.swift in Sources */,
 				E5AE20822528271100F98C66 /* JyDate.swift in Sources */,
 				5CE39C782C83FEA300D7E658 /* CustomOperationPractice.swift in Sources */,
