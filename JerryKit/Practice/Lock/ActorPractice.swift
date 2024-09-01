@@ -9,7 +9,7 @@
 class ActorPractice: BasePractice {
     func startTest() {
 //        test1()
-//        test2()
+        test2()
         test3()
     }
 }
@@ -28,13 +28,13 @@ extension ActorPractice {
     // 會有data race
     private func test2() {
         let store = BalanceStore(accountName: "Tom")
-        for _ in 0...100 {
+        for _ in 0...1000 {
             let when = DispatchTime.now() + .milliseconds(100)
             DispatchQueue.global().asyncAfter(deadline: when) {
                 store.increment(100)
             }
         }
-        for _ in 0...100 {
+        for _ in 0...1000 {
             let when = DispatchTime.now() + .milliseconds(100)
             DispatchQueue.global().asyncAfter(deadline: when) {
                 store.increment(-100)
@@ -42,13 +42,13 @@ extension ActorPractice {
         }
         let when = DispatchTime.now() + .seconds(5)
         DispatchQueue.global().asyncAfter(deadline: when) {
-            print("Final balance: \(store.balance)")
+            print("test2 Final balance: \(store.balance)")
         }
     }
     // 用actor修正data race
     private func test3() {
         let store = BalanceStoreActor(accountName: "Tom")
-        for _ in 0...100 {
+        for _ in 0...1000 {
             let when = DispatchTime.now() + .milliseconds(100)
             DispatchQueue.global().asyncAfter(deadline: when) {
                 Task {
@@ -56,7 +56,7 @@ extension ActorPractice {
                 }
             }
         }
-        for _ in 0...100 {
+        for _ in 0...1000 {
             let when = DispatchTime.now() + .milliseconds(100)
             DispatchQueue.global().asyncAfter(deadline: when) {
                 Task {
@@ -67,7 +67,7 @@ extension ActorPractice {
         let when = DispatchTime.now() + .seconds(5)
         DispatchQueue.global().asyncAfter(deadline: when) {
             Task {
-                await print("Final balance: \(store.balance)")                
+                await print("test3 Final balance: \(store.balance)")
             }
         }
     }
