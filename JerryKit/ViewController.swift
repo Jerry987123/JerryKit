@@ -33,7 +33,8 @@ class ViewController: UIViewController {
 //        NSLockPractice().startTest()
 //        NSLockConditionPractice().startTest()
 //        NSLockConditionLockPractice().startTest()
-        basePractice = ActorPractice()
+//        basePractice = ActorPractice()
+        basePractice = ActorPractice2()
         
         basePractice?.startTest()
     }
