@@ -19,13 +19,15 @@ class ViewController: UIViewController {
 //        GCPGroupPractice().startTest()
 //        GCPWorkItemPractice().startTest()
 //        GCPSemaphorePractice().startTest()
+        // Operation
+        BlockOperationPracrtice().startTest()
         // Lock
 //        OSUnfairLockPractice().startTest()
 //        PthreadMutexRecursivePractice().startTest()
 //        pthreadMutexConditionPractice().startTest()
 //        NSLockPractice().startTest()
 //        NSLockConditionPractice().startTest()
-        NSLockConditionLockPractice().startTest()
+//        NSLockConditionLockPractice().startTest()
     }
 
 }
