@@ -117,12 +117,7 @@
 		5CDA19EB2C82F76700552A37 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
-				5CDA19F52C8362BB00552A37 /* OSUnfairLockPractice.swift */,
-				5CDA19F72C83703800552A37 /* PthreadMutexRecursivePractice.swift */,
-				5CDA19F92C83784F00552A37 /* pthreadMutexConditionPractice.swift */,
-				5CDA19FB2C83892200552A37 /* NSLockPractice.swift */,
-				5CDA19FD2C838A4100552A37 /* NSLockConditionPractice.swift */,
-				5CDA19FF2C838C0F00552A37 /* NSLockConditionLockPractice.swift */,
+				5CE39C732C83FAE500D7E658 /* Lock */,
 				5CDA19EC2C82F77300552A37 /* GCP */,
 			);
 			path = Practice;
@@ -137,6 +132,19 @@
 				5CDA19E92C82F2C300552A37 /* GCPPractice.swift */,
 			);
 			path = GCP;
+			sourceTree = "<group>";
+		};
+		5CE39C732C83FAE500D7E658 /* Lock */ = {
+			isa = PBXGroup;
+			children = (
+				5CDA19F52C8362BB00552A37 /* OSUnfairLockPractice.swift */,
+				5CDA19F72C83703800552A37 /* PthreadMutexRecursivePractice.swift */,
+				5CDA19F92C83784F00552A37 /* pthreadMutexConditionPractice.swift */,
+				5CDA19FB2C83892200552A37 /* NSLockPractice.swift */,
+				5CDA19FD2C838A4100552A37 /* NSLockConditionPractice.swift */,
+				5CDA19FF2C838C0F00552A37 /* NSLockConditionLockPractice.swift */,
+			);
+			path = Lock;
 			sourceTree = "<group>";
 		};
 		E58D4B582527A5E700C84005 = {
