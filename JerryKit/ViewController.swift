@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var basePractice: BasePractice?
+    var combinePractice: CombinePractice?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,11 +38,17 @@ class ViewController: UIViewController {
 //        basePractice = ActorPractice2()
         basePractice = ActorPractice3()
 //        basePractice = SendablePractice()
-        
+        // Combine
+        combinePractice = CombinePractice()
+        basePractice = combinePractice
         
         basePractice?.startTest()
     }
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let data = Item(title: "我是一隻魚")
+        NotificationCenter.default.post(name: .dataLoaded, object: data)
+        print(combinePractice?.titleLabel.text ?? "123")
+    }
 }
 // private
 extension ViewController {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CABCECB2C860BE5001E2255 /* CombinePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CABCECA2C860BDD001E2255 /* CombinePractice.swift */; };
 		5CDA19EA2C82F2E600552A37 /* GCDPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19E92C82F2C300552A37 /* GCDPractice.swift */; };
 		5CDA19EE2C82F78600552A37 /* GCDGroupPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19ED2C82F78000552A37 /* GCDGroupPractice.swift */; };
 		5CDA19F02C82FDF900552A37 /* GCDWorkItemPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDA19EF2C82FDF100552A37 /* GCDWorkItemPractice.swift */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CABCECA2C860BDD001E2255 /* CombinePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinePractice.swift; sourceTree = "<group>"; };
 		5CDA19E92C82F2C300552A37 /* GCDPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDPractice.swift; sourceTree = "<group>"; };
 		5CDA19ED2C82F78000552A37 /* GCDGroupPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDGroupPractice.swift; sourceTree = "<group>"; };
 		5CDA19EF2C82FDF100552A37 /* GCDWorkItemPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDWorkItemPractice.swift; sourceTree = "<group>"; };
@@ -132,9 +134,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CABCEC92C860BD7001E2255 /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				5CABCECA2C860BDD001E2255 /* CombinePractice.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 		5CDA19EB2C82F76700552A37 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				5CABCEC92C860BD7001E2255 /* Combine */,
 				5CE39C742C83FC4300D7E658 /* Operation */,
 				5CE39C732C83FAE500D7E658 /* Lock */,
 				5CDA19EC2C82F77300552A37 /* GCD */,
@@ -439,6 +450,7 @@
 				5CE39C802C842C1700D7E658 /* ActorPractice.swift in Sources */,
 				5CE39C842C846A3F00D7E658 /* SendablePractice.swift in Sources */,
 				5CE39C7C2C840AC800D7E658 /* OperationQueuePractice.swift in Sources */,
+				5CABCECB2C860BE5001E2255 /* CombinePractice.swift in Sources */,
 				5CE39C862C8475CB00D7E658 /* ActorPractice3.swift in Sources */,
 				E5AE20842528294600F98C66 /* JyDateTest.swift in Sources */,
 				E5F6CC3725287E1D0008CD47 /* JySqlite.swift in Sources */,
